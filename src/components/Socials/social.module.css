@@ -1,0 +1,6 @@
+.socialList {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
