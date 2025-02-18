@@ -5,7 +5,6 @@ interface SunnIconProps {
   ariaLabel: string
   role: string
   title: string
-  className: string
 }
 
 const SunIcon = ({
@@ -14,12 +13,10 @@ const SunIcon = ({
   color = 'currentColor',
   ariaLabel = 'Sun Icon',
   role = 'img',
-  title = 'Switch to Light Mode',
-  className = 'sunIcon'
+  title = 'Switch to Light Mode'
 }: SunnIconProps) => {
   return (
     <svg
-      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}

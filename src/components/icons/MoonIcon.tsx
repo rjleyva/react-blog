@@ -5,7 +5,6 @@ interface MoonIconProps {
   ariaLabel: string
   role: string
   title: string
-  className: string
 }
 
 const MoonIcon = ({
@@ -14,12 +13,10 @@ const MoonIcon = ({
   color = 'currentColor',
   ariaLabel = 'Moon Icon',
   role = 'img',
-  title = 'Switch to Dark Mode',
-  className = 'moonIcon'
+  title = 'Switch to Dark Mode'
 }: MoonIconProps) => {
   return (
     <svg
-      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}

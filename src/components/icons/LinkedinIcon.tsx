@@ -5,7 +5,6 @@ interface LinkedinIconProps {
   ariaLabel: string
   role: string
   title: string
-  className: string
 }
 
 const LinkedinIcon = ({
@@ -14,19 +13,17 @@ const LinkedinIcon = ({
   color = 'currentColor',
   ariaLabel = 'LinkedIn Icon',
   role = 'img',
-  title = 'Connect with RJ Leyva on LinkedIn',
-  className = 'linkedinIcon'
+  title = 'Connect with RJ Leyva on LinkedIn'
 }: LinkedinIconProps) => {
   return (
     <svg
-      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}
       viewBox="0 0 24 24"
       fill="none"
       stroke={color}
-      strokeWidth="2"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-label={ariaLabel}

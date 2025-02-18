@@ -5,7 +5,6 @@ interface InstagramIconProps {
   ariaLabel: string
   role: string
   title: string
-  className: string
 }
 
 const InstagramIcon = ({
@@ -14,12 +13,10 @@ const InstagramIcon = ({
   color = 'currentColor',
   ariaLabel = 'Instagram Icon',
   role = 'img',
-  title = 'Connect with RJ Leyva on Instagram',
-  className = 'instagramIcon'
+  title = 'Connect with RJ Leyva on Instagram'
 }: InstagramIconProps) => {
   return (
     <svg
-      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}

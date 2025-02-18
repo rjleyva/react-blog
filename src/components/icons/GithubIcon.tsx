@@ -5,7 +5,6 @@ interface GithubIconProps {
   ariaLabel: string
   role: string
   title: string
-  className: string
 }
 
 const GithubIcon = ({
@@ -14,12 +13,10 @@ const GithubIcon = ({
   color = 'currentColor',
   ariaLabel = 'GitHub Icon',
   role = 'img',
-  title = 'Connect with RJ on GitHub',
-  className = 'githubIcon'
+  title = 'Connect with RJ on GitHub'
 }: GithubIconProps) => {
   return (
     <svg
-      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}
