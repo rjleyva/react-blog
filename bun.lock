@@ -4,6 +4,7 @@
     "": {
       "name": "react-blog",
       "dependencies": {
+        "@fontsource-variable/inter-tight": "^5.1.1",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "react-router": "^7.1.5",
@@ -132,6 +133,8 @@
     "@eslint/object-schema": ["@eslint/object-schema@2.1.6", "", {}, "sha512-RBMg5FRL0I0gs51M/guSAj5/e14VQ4tpZnQNWwuDT66P14I43ItmPfIZRhO9fUVIPOAQXU47atlywZ/czoqFPA=="],
 
     "@eslint/plugin-kit": ["@eslint/plugin-kit@0.2.5", "", { "dependencies": { "@eslint/core": "^0.10.0", "levn": "^0.4.1" } }, "sha512-lB05FkqEdUg2AA0xEbUz0SnkXT1LcCTa438W4IWTUh4hdOnVbQyOJ81OrDXsJk/LSiJHubgGEFoR5EHq1NsH1A=="],
+
+    "@fontsource-variable/inter-tight": ["@fontsource-variable/inter-tight@5.1.1", "", {}, "sha512-uPBgjWbkau/7q/IGu/offWoaQqx9dky6shbqQFsBUsoosG6rhrX7azqh0tnrENpgjoE+CwgEotQ8eZaha1ni8w=="],
 
     "@humanfs/core": ["@humanfs/core@0.19.1", "", {}, "sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA=="],
 
