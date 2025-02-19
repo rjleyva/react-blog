@@ -11,6 +11,26 @@
     U+2215, U+FEFF, U+FFFD;
 }
 
+:root {
+  --color: #121210;
+  --background-gradient:
+    radial-gradient(at 51% 61%, #d2e3f0 0px, transparent 50%),
+    radial-gradient(at 23% 11%, #c1d9e9 0px, transparent 50%),
+    radial-gradient(at 77% 9%, #aed0e2 0px, transparent 50%),
+    radial-gradient(at 42% 2%, #9ab7d9 0px, transparent 50%),
+    radial-gradient(at 35% 98%, #889eb7 0px, transparent 50%) #e5eff6;
+}
+
+[data-theme='dark'] {
+  --color: #f8fafb;
+  --background-gradient:
+    radial-gradient(at 51% 61%, #001217 0px, transparent 50%),
+    radial-gradient(at 23% 11%, #002027 0px, transparent 50%),
+    radial-gradient(at 77% 9%, #002e36 0px, transparent 50%),
+    radial-gradient(at 42% 2%, #003c45 0px, transparent 50%),
+    radial-gradient(at 35% 98%, #004954 0px, transparent 50%) #000000;
+}
+
 *,
 *::before,
 *::after {
@@ -21,13 +41,22 @@
 
 html,
 body {
-  max-width: 100vw;
+  background: var(--background-gradient);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
 body {
+  color: var(--color);
+  background: var(--background-gradient);
   font-family: 'Inter Tight Variable', sans-serif;
   font-synthesis: none;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
