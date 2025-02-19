@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router'
 import Socials from '../Socials/Socials'
+import { ThemeToggle } from '../Theme/ThemeToggle'
 import styles from './header.module.css'
 
 interface HeaderProps {
@@ -12,7 +13,8 @@ const Header = ({ home }: HeaderProps) => {
       <nav className={styles.nav}>
         <NavLink to="/">{home}</NavLink>
 
-        <div>
+        <div className={styles.iconsContainer}>
+          <ThemeToggle />
           <Socials />
         </div>
       </nav>
