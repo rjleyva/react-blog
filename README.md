@@ -1,50 +1,72 @@
-# React + TypeScript + Vite
+# React Markdown Blog (Built with TypeScript & Bun)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**NOTE:** This project is still in progress...
 
-Currently, two official plugins are available:
+A fast and scalable blog application built with React, TypeScript, and powered by Bun. This project allows you to write and render blog posts using Markdown, providing an optimal, performance-focused development experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- React for building a dynamic UI
+- Markdown support for writing posts
+- TypeScript for type safety
+- Bun for fast bundling and optimized builds
+- Lightweight and Fast - optimized for performance and quick load times
+- Simple Markdown rendering with custom components
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 💻 Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+Follow these steps to get the project up and running locally.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname
-    }
-  }
-})
+### Prerequisites
+
+Before running the project, ensure you have the following installed:
+
+- Node.js (for compatibility with Bun)
+- Bun (for faster bundling and package management)
+
+## Install Dependencies
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/rjleyva/react-blog.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Install the dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules
-  }
-})
+```bash
+bun install
 ```
+
+Run the Development Server
+
+```bash
+bunx --bun astro dev
+```
+
+## 📝 Writing a Post
+
+To create a new post, add a new `.md` file in the `posts/` directory. The file should follow this structure:
+
+```markdown
+# Post Title
+
+Written by Your Name
+
+## Introduction
+
+This is the content of your blog post. You can use **Markdown** to format text.
+
+- List item 1
+- List item 2
+```
+
+The Markdown content will automatically be parsed and rendered as HTML in the blog interface.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repository, make improvements, and create pull requests.
+
+## 🧑🏻Author
+
+Created by RJ Leyva - feel free to react out!
